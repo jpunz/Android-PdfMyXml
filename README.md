@@ -114,7 +114,7 @@ or use `PdfDocument.Builder`
 new PdfDocument.Builder(ctx).addPage(page).orientation(PdfDocument.A4_MODE.LANDSCAPE)
                          .progressMessage(R.string.gen_pdf_file).progressTitle(R.string.gen_please_wait)
                          .renderWidth(2115).renderHeight(1500)
-                         .saveDirectory(_ctx.getExternalFilesDir(null));
+                         .saveDirectory(_ctx.getExternalFilesDir(null))
                          .filename("test")
                          .listener(new PdfDocument.Callback() {
                              @Override
